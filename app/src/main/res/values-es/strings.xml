@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Proyecto</string>
+
+    <string name="welcome">Bienvenido...</string>
+    <string name="user">Nombre de usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="btnLogin">Ingresar</string>
+</resources>

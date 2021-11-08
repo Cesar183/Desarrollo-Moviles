@@ -1,7 +1,11 @@
 package com.example.proyecto
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity()
 {
@@ -9,5 +13,34 @@ class MainActivity : AppCompatActivity()
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val btnlogin = findViewById<Button>(R.id.btnLogin)
+        btnlogin.setOnClickListener {
+            ValidarCredenciales()
+        }
+    }
+    //Usuario: correo@email.com
+    //Contraseña: 1234
+    private fun ValidarCredenciales()
+    {
+        val etUsuario = findViewById<EditText>(R.id.etUsuario)
+        val etContraseña = findViewById<EditText>(R.id.etContraseña)
+        if(etUsuario.text.toString() == "correo@email.com")
+        {
+            if(etContraseña.text.toString().equals( "1234"))
+            {
+                val intentBienvenido = Intent(this, BienvenidaActivity::class.java)
+                startActivity(intentBienvenido)
+            }
+            else
+            {
+                Toast.makeText(this, "Password invalid", Toast.LENGTH_LONG).show()
+            }
+        }
+        else
+        {
+            Toast.makeText(this, "user invalid", Toast.LENGTH_LONG).show()
+        }
     }
 }
+
