@@ -14,5 +14,14 @@
             android:text="@string/welcome"
             android:textSize="20dp"
             />
+
+    </LinearLayout>
+    <LinearLayout>
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnClose"
+            />
     </LinearLayout>
 </TableLayout>
