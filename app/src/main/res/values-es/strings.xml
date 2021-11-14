@@ -2,8 +2,15 @@
     <string name="app_name">Proyecto</string>
 
     <string name="welcome">Bienvenido...</string>
-    <string name="user">Nombre de usuario</string>
+    <string name="username">Nombre de usuario</string>
     <string name="password">Contraseña</string>
     <string name="btnLogin">Ingresar</string>
+    <string name="txt_welcome">Bienvenido</string>
+    <string name="user">Cesar</string>
+    <string name="txt_introduction">Introduccion</string>
+    <string name="txt_class1">Clase 1</string>
     <string name="btnClose">Cerrar</string>
+
+    <string name="loren_ipsum">Loren ipsum dolor...es</string>
+    <string name="loren_ipsum_2">Sed ut perspiciatis...es</string>
 </resources>
