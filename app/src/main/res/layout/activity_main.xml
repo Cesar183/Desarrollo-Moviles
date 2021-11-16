@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/user"
+            android:text="@string/username"
             android:textSize="25dp"
 
             />
@@ -51,7 +51,18 @@
             android:layout_height="wrap_content"
             android:text="@string/btnLogin"
             android:gravity="center"
-            android:textSize="20dp"
+            android:layout_margin="15dp"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            />
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnSignUp"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            android:textSize="18dp"
             android:layout_marginTop="15dp"
             />
     </LinearLayout>

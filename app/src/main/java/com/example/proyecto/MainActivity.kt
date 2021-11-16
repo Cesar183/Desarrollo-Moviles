@@ -18,7 +18,18 @@ class MainActivity : AppCompatActivity()
         btnlogin.setOnClickListener {
             ValidarCredenciales()
         }
+        val btnSignUp = findViewById<Button>(R.id.btnSignUp)
+        btnSignUp.setOnClickListener {
+            NewUser()
+        }
     }
+
+    private fun NewUser()
+    {
+        val intentSignUp = Intent(this, SignUpActivity::class.java)
+        startActivity(intentSignUp)
+    }
+
     //Usuario: correo@email.com
     //Contraseña: 1234
     private fun ValidarCredenciales()
@@ -43,4 +54,3 @@ class MainActivity : AppCompatActivity()
         }
     }
 }
-

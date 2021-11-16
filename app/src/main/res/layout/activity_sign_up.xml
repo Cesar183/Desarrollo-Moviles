@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtSignUp"
+        android:textSize="45dp"
+
+        />
+    <TableLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtName"
+            android:layout_marginTop="25dp"
+            android:textSize="25dp"
+
+            />
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtLastName"
+            android:textSize="25dp"
+
+            />
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtEmail"
+            android:textSize="25dp"
+
+            />
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtPassword"
+            android:textSize="25dp"
+
+            />
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtConfirmPassword"
+            android:textSize="25dp"
+
+            />
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtPhone"
+            android:textSize="25dp"
+            />
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+
+            />
+    </TableLayout>
+    <LinearLayout>
+        <CheckBox
+            android:id="@+id/cbTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="@string/check_Terms"/>
+    </LinearLayout>
+
+    <LinearLayout>
+
+        <Button
+            android:id="@+id/btnSignUpRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnSignUp"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            />
+        <Button
+            android:id="@+id/btnBackLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnBackLogin"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            />
+    </LinearLayout>
+</TableLayout>

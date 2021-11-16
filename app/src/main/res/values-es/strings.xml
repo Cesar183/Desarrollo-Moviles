@@ -2,13 +2,26 @@
     <string name="app_name">Proyecto</string>
 
     <string name="welcome">Bienvenido...</string>
+    <string name="txtSignUp">Inscribirse</string>
     <string name="username">Nombre de usuario</string>
     <string name="password">Contraseña</string>
+    <string name="txtName">Nombres</string>
+    <string name="txtLastName">Apellidos</string>
+    <string name="txtEmail">Correo Electronico</string>
+    <string name="txtPhone">Telefono</string>
+    <string name="txtPassword">Contraseña</string>
+    <string name="txtConfirmPassword">Confirmar contraseña</string>
     <string name="btnLogin">Ingresar</string>
+    <string name="btnSignUp">Registrate</string>
+    <string name="btnBackLogin">Regresar</string>
     <string name="txt_welcome">Bienvenido</string>
     <string name="user">Cesar</string>
     <string name="txt_introduction">Introduccion</string>
     <string name="txt_class1">Clase 1</string>
+    <string name="check_Terms">Aceptar terminos y condidiones</string>
+    <string name="txtField">Esta casilla no puede estar en blanco</string>
+    <string name="txtFieldTerms">Debes aceptar los terminos y condiciones</string>
+    <string name="registered">Usuario registrado correctamente</string>
     <string name="btnClose">Cerrar</string>
 
     <string name="loren_ipsum">Loren ipsum dolor...es</string>

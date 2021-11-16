@@ -2,13 +2,26 @@
     <string name="app_name">Proyecto</string>
 
     <string name="welcome">Welcome...</string>
+    <string name="txtSignUp">Sign Up</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
+    <string name="txtName">Names</string>
+    <string name="txtLastName">Last Name</string>
+    <string name="txtEmail">Email</string>
+    <string name="txtPhone">Phone</string>
+    <string name="txtPassword">Password</string>
+    <string name="txtConfirmPassword">Confirm Password</string>
     <string name="btnLogin">Login</string>
+    <string name="btnSignUp">Sign up</string>
+    <string name="btnBackLogin">Back</string>
     <string name="txt_welcome">Welcome</string>
     <string name="user">Cesar</string>
     <string name="txt_introduction">Introduction</string>
     <string name="txt_class1">Class 1</string>
+    <string name="check_Terms">Accept terms and conditions</string>
+    <string name="txtField">This field can not be blank</string>
+    <string name="txtFieldTerms">You must accept terms and conditions</string>
+    <string name="registered">Successfully registered user</string>
     <string name="btnClose">Close</string>
 
     <string name="loren_ipsum">Loren ipsum dolor...</string>
