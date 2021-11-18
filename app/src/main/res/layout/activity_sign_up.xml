@@ -27,6 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
+
             />
         <TextView
             android:layout_width="wrap_content"
@@ -42,6 +43,7 @@
             android:inputType="textEmailAddress"
             />
         <TextView
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/txtEmail"
@@ -67,19 +69,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/txtConfirmPassword"
-            android:textSize="25dp"
 
-            />
-        <EditText
-            android:id="@+id/etConfirmPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

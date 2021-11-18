@@ -47,22 +47,24 @@
     <LinearLayout>
         <Button
             android:id="@+id/btnLogin"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/btnLogin"
             android:gravity="center"
-            android:layout_margin="15dp"
-            android:textSize="18dp"
+            android:layout_margin="12dp"
+            android:textSize="16dp"
             android:layout_marginTop="15dp"
             />
         <Button
             android:id="@+id/btnSignUp"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/btnSignUp"
             android:gravity="center"
-            android:layout_margin="15dp"
-            android:textSize="18dp"
+            android:layout_margin="12dp"
+            android:textSize="16dp"
             android:layout_marginTop="15dp"
             />
     </LinearLayout>

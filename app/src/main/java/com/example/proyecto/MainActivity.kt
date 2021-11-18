@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity()
             }
             else
             {
-                Toast.makeText(this, "Password invalid", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "password invalid", Toast.LENGTH_LONG).show()
             }
         }
         else
