@@ -22,8 +22,17 @@ class MainActivity : AppCompatActivity()
         btnSignUp.setOnClickListener {
             NewUser()
         }
+        val btnCerrarLog = findViewById<Button>(R.id.btnBack)
+        btnCerrarLog.setOnClickListener{
+            Volver()
+        }
     }
 
+    private fun Volver()
+    {
+        val intentVolver = Intent(this, PrincipalActivity::class.java)
+        startActivity(intentVolver)
+    }
     private fun NewUser()
     {
         val intentSignUp = Intent(this, SignUpActivity::class.java)
@@ -41,6 +50,8 @@ class MainActivity : AppCompatActivity()
             if(etContraseña.text.toString().equals( "1234"))
             {
                 val intentBienvenido = Intent(this, BienvenidaActivity::class.java)
+                etUsuario.setText("")
+                etContraseña.setText("")
                 startActivity(intentBienvenido)
             }
             else

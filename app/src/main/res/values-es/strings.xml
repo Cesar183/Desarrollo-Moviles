@@ -7,23 +7,33 @@
     <string name="password">Contraseña</string>
     <string name="txtName">Nombres</string>
     <string name="txtLastName">Apellidos</string>
-    <string name="txtEmail">Correo Electronico</string>
-    <string name="txtPhone">Telefono</string>
+    <string name="txtEmail">Correo Electrónico</string>
+    <string name="txtPhone">Teléfono</string>
     <string name="txtPassword">Contraseña</string>
     <string name="txtConfirmPassword">Confirmar contraseña</string>
     <string name="btnLogin">Ingresar</string>
-    <string name="btnSignUp">Registrate</string>
+    <string name="btnSignUp">Regístrate</string>
     <string name="btnBackLogin">Regresar</string>
     <string name="txt_welcome">Bienvenido</string>
-    <string name="user">Cesar</string>
+    <string name="user">Estudiante</string>
     <string name="txt_introduction">Introduccion</string>
     <string name="txt_class1">Clase 1</string>
-    <string name="check_Terms">Aceptar terminos y condidiones</string>
+    <string name="check_Terms">Aceptar términos y condiciones</string>
     <string name="txtField">Esta casilla no puede estar en blanco</string>
-    <string name="txtFieldTerms">Debes aceptar los terminos y condiciones</string>
+    <string name="txtFieldTerms">Debes aceptar los términos y condiciones</string>
     <string name="registered">Usuario registrado correctamente</string>
     <string name="btnClose">Cerrar</string>
 
     <string name="loren_ipsum">Loren ipsum dolor...es</string>
     <string name="loren_ipsum_2">Sed ut perspiciatis...es</string>
+
+    <string name="txt_action_search">Buscar</string>
+    <string name="txt_action_settings">Configuración</string>
+    <string name="txt_action_log">Acceder</string>
+    <string name="txt_action_logout">Salir</string>
+
+    <string name="txtMath">Matemáticas</string>
+    <string name="txtSpanish">Español</string>
+    <string name="txtChemistry">Química</string>
+    <string name="txtEnglish">Inglés</string>
 </resources>

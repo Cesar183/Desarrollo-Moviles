@@ -84,7 +84,7 @@ class SignUpActivity : AppCompatActivity()
         var pattern: Pattern
         var matcher: Matcher
 
-        val PATRON_CONTRASENA = "^(?=.[0-9])(?=.[a-z])(?=.[A-Z])(?=.[@!%*?&])(?=\\S+$).{8,}$"
+        val PATRON_CONTRASENA = "^(?=.[0-9])(?=.[a-z])(?=.[A-Z])(?=.[@!%*?&])(?=\\S+$).{8,15}$"
 
         pattern = Pattern.compile( PATRON_CONTRASENA )
         matcher = pattern.matcher( pass )
