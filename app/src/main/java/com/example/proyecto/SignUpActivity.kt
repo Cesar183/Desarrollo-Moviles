@@ -1,12 +1,22 @@
 package com.example.proyecto
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.AttributeSet
+import android.view.View
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.Toast
+import com.example.proyecto.database.PersonaDB
+import com.example.proyecto.model.Persona
+import kotlinx.android.synthetic.main.activity_sign_up.*
+import kotlinx.android.synthetic.main.persona_list_item.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import java.util.regex.Matcher
 import java.util.regex.Pattern
 
@@ -20,17 +30,25 @@ class SignUpActivity : AppCompatActivity()
 
         val btnSignUp = findViewById<Button>(R.id.btnSignUpRegister)
         val btnRegresarLog = findViewById<Button>(R.id.btnBackLogin)
+
         btnSignUp.setOnClickListener {
             ValidarInformacion()
+            //RegistrarUsuario()
         }
         btnRegresarLog.setOnClickListener {
             Regresar()
         }
     }
+
     private fun Regresar()
     {
         val intentLog = Intent(this, MainActivity::class.java)
         startActivity(intentLog)
+    }
+    private fun RegistrarUsuario()
+    {
+        val intentListUsuario = Intent(this, ListaPersonasActivity::class.java)
+        startActivity(intentListUsuario)
     }
     private fun ValidarInformacion()
     {
@@ -78,6 +96,23 @@ class SignUpActivity : AppCompatActivity()
             etContraseña.setText("")
             etTelefono.setText("")
             cbTerminos.isChecked = false
+
+            //RegistrarEnDB()
+        }
+    }
+    private fun RegistrarEnDB()
+    {
+        lateinit var context: Context
+        //val context = activity?.applicationContext
+        //Intanciar objeto persona para guardar en la DB
+        val persona = Persona(0, "${etName.text}","${etLastName.text}","${etEmail.text}","${etPassword.text}","${etPhone.text}")
+        //Inserta en la DB usando Coroutine
+        CoroutineScope(Dispatchers.IO).launch {
+            val database = context?.let{PersonaDB.getDatabase(it)}
+            if(database != null)
+            {
+                database.personaDAO().insertar(persona)
+            }
         }
     }
     private fun validarContrasena ( pass: String): Boolean {
