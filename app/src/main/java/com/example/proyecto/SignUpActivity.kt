@@ -11,6 +11,7 @@ import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.Toast
 import com.example.proyecto.database.PersonaDB
+import com.example.proyecto.databinding.ActivitySignUpBinding
 import com.example.proyecto.model.Persona
 import kotlinx.android.synthetic.main.activity_sign_up.*
 import kotlinx.android.synthetic.main.persona_list_item.*
@@ -22,20 +23,18 @@ import java.util.regex.Pattern
 
 class SignUpActivity : AppCompatActivity()
 {
-
+    private lateinit var binding: ActivitySignUpBinding
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_up)
+        binding = ActivitySignUpBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val btnSignUp = findViewById<Button>(R.id.btnSignUpRegister)
-        val btnRegresarLog = findViewById<Button>(R.id.btnBackLogin)
-
-        btnSignUp.setOnClickListener {
+        binding.btnSignUpRegister.setOnClickListener{
             ValidarInformacion()
             //RegistrarUsuario()
         }
-        btnRegresarLog.setOnClickListener {
+        binding.btnBackLogin.setOnClickListener {
             Regresar()
         }
     }

@@ -6,24 +6,24 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.proyecto.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity()
 {
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val btnlogin = findViewById<Button>(R.id.btnLogin)
-        btnlogin.setOnClickListener {
+        binding.btnLogin.setOnClickListener() {
             ValidarCredenciales()
         }
-        val btnSignUp = findViewById<Button>(R.id.btnSignUp)
-        btnSignUp.setOnClickListener {
+        binding.btnSignUp.setOnClickListener {
             NewUser()
         }
-        val btnCerrarLog = findViewById<Button>(R.id.btnBack)
-        btnCerrarLog.setOnClickListener{
+        binding.btnBack.setOnClickListener{
             Volver()
         }
     }
