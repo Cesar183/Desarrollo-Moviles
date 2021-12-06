@@ -13,6 +13,9 @@ import android.widget.Toast
 import com.example.proyecto.database.PersonaDB
 import com.example.proyecto.databinding.ActivitySignUpBinding
 import com.example.proyecto.model.Persona
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_sign_up.*
 import kotlinx.android.synthetic.main.persona_list_item.*
 import kotlinx.coroutines.CoroutineScope
@@ -24,15 +27,18 @@ import java.util.regex.Pattern
 class SignUpActivity : AppCompatActivity()
 {
     private lateinit var binding: ActivitySignUpBinding
+    private lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        //Inicializar servicio de Firebase
+        auth = Firebase.auth
 
         binding.btnSignUpRegister.setOnClickListener{
-            ValidarInformacion()
-            //RegistrarUsuario()
+            //ValidarInformacion()
+            RegistrarUsuario()
         }
         binding.btnBackLogin.setOnClickListener {
             Regresar()
@@ -46,8 +52,33 @@ class SignUpActivity : AppCompatActivity()
     }
     private fun RegistrarUsuario()
     {
-        val intentListUsuario = Intent(this, ListaPersonasActivity::class.java)
-        startActivity(intentListUsuario)
+        val nombre = binding.etName.text.toString()
+        val apellidos = binding.etLastName.text.toString()
+        val email = binding.etEmail.text.toString()
+        val pass = binding.etPassword.text.toString()
+        val telefono = binding.etPhone.text.toString()
+
+        val autenticado: String by lazy { resources.getString(R.string.AuthenticationSuccesfull)}
+        val autenticacionFallida: String by lazy { resources.getString(R.string.AuthenticationFailed)}
+
+        auth.createUserWithEmailAndPassword(email, pass)
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                    Toast.makeText(baseContext, autenticado,
+                        Toast.LENGTH_SHORT).show()
+                    val user = auth.currentUser
+                    verActivityMain()
+                } else {
+                    Toast.makeText(baseContext, autenticacionFallida,
+                        Toast.LENGTH_SHORT).show()
+                    //updateUI(null)
+                }
+            }
+    }
+    private fun verActivityMain()
+    {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
     }
     private fun ValidarInformacion()
     {
@@ -125,4 +156,5 @@ class SignUpActivity : AppCompatActivity()
 
         return matcher.matches()
     }
+
 }

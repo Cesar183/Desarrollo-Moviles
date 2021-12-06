@@ -22,7 +22,7 @@
     <string name="txtField">Esta casilla no puede estar en blanco</string>
     <string name="txtFieldTerms">Debes aceptar los términos y condiciones</string>
     <string name="registered">Usuario registrado correctamente</string>
-    <string name="btnClose">Cerrar</string>
+    <string name="btnClose">Cerrar Sesión</string>
 
     <string name="loren_ipsum">Loren ipsum dolor...es</string>
     <string name="loren_ipsum_2">Sed ut perspiciatis...es</string>
@@ -36,4 +36,7 @@
     <string name="txtSpanish">Español</string>
     <string name="txtChemistry">Química</string>
     <string name="txtEnglish">Inglés</string>
+
+    <string name="AuthenticationSuccesfull">Autenticación exitosa.</string>
+    <string name="AuthenticationFailed">Autenticación fallida.</string>
 </resources>

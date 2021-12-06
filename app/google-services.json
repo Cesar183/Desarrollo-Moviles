@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "494205695546",
+    "project_id": "pruebassaberapp",
+    "storage_bucket": "pruebassaberapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494205695546:android:4c6ceb9d1d9a2b7fe3a703",
+        "android_client_info": {
+          "package_name": "com.example.proyecto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "494205695546-bvksabmbvk6asviirlsqnsjejnhrto21.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeJ50NfZIp8VNKPLNwQ1IG_Yq4ZOSZBPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "494205695546-bvksabmbvk6asviirlsqnsjejnhrto21.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
