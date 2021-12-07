@@ -53,8 +53,7 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:background="#ddd"
         android:orientation="horizontal"
         android:layout_margin="20dp">
@@ -68,7 +67,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/txtMath"
+                android:text="@string/txtExam"
                 android:textStyle="bold"
                 android:textColor="@color/black"
                 android:textSize="20dp"/>
@@ -78,7 +77,8 @@
                 android:text="@string/loren_ipsum"
                 android:textSize="15dp"/>
         </LinearLayout>
-        <ImageView
+        <ImageButton
+            android:id="@+id/btnExam"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -86,110 +86,24 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#ddd"
-        android:orientation="horizontal"
-        android:layout_margin="20dp">
+        android:layout_height="match_parent"
+        >
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtChemistry"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:textSize="20dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/loren_ipsum"
-                android:textSize="15dp"/>
-        </LinearLayout>
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@mipmap/ic_launcher"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#ddd"
-        android:orientation="horizontal"
-        android:layout_margin="20dp">
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtSpanish"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:textSize="20dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/loren_ipsum"
-                android:textSize="15dp"/>
-        </LinearLayout>
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@mipmap/ic_launcher"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#ddd"
-        android:orientation="horizontal"
-        android:layout_margin="20dp">
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtEnglish"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:textSize="20dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/loren_ipsum"
-                android:textSize="15dp"/>
-        </LinearLayout>
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@mipmap/ic_launcher"/>
-    </LinearLayout>
-    <LinearLayout>
+        <Button
+            android:id="@+id/btnAdicionarPregunta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnAdicionar"
+            android:textSize="14dp"
+            android:layout_margin="5dp"
+            />
         <Button
             android:id="@+id/btnClose"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/btnClose"
             android:textSize="14dp"
+            android:layout_margin="5dp"
             />
     </LinearLayout>
 </TableLayout>

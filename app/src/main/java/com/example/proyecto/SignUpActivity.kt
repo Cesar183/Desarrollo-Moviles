@@ -60,7 +60,20 @@ class SignUpActivity : AppCompatActivity()
 
         val autenticado: String by lazy { resources.getString(R.string.AuthenticationSuccesfull)}
         val autenticacionFallida: String by lazy { resources.getString(R.string.AuthenticationFailed)}
-
+        /*
+        auth.createUserWithEmailAndPassword(email, pass)
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                    Toast.makeText(baseContext, autenticado,
+                        Toast.LENGTH_SHORT).show()
+                    val user = auth.currentUser
+                    verActivityMain()
+                } else {
+                    Toast.makeText(baseContext, autenticacionFallida,
+                        Toast.LENGTH_SHORT).show()
+                    //updateUI(null)
+                }
+            }*/
         auth.createUserWithEmailAndPassword(email, pass)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {

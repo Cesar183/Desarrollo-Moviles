@@ -22,6 +22,7 @@
     <string name="txtField">Esta casilla no puede estar en blanco</string>
     <string name="txtFieldTerms">Debes aceptar los términos y condiciones</string>
     <string name="registered">Usuario registrado correctamente</string>
+    <string name="questionRegistered">Pregunta registrada correctamente</string>
     <string name="btnClose">Cerrar Sesión</string>
 
     <string name="loren_ipsum">Loren ipsum dolor...es</string>
@@ -39,4 +40,9 @@
 
     <string name="AuthenticationSuccesfull">Autenticación exitosa.</string>
     <string name="AuthenticationFailed">Autenticación fallida.</string>
+
+    <string name="btnAdicionar">Agregar preguntas</string>
+    <string name="txtExam">Examen</string>
+    <string name="txtSave">Guardar</string>
+    <string name="txtBack">Volver</string>
 </resources>

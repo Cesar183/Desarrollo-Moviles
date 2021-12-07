@@ -25,11 +25,19 @@ class BienvenidaActivity : AppCompatActivity()
         binding.btnClose.setOnClickListener {
             cerrarSesion()
         }
+        binding.btnAdicionarPregunta.setOnClickListener{
+            agregarPreguntas()
+        }
     }
     private fun cerrarSesion()
     {
         auth.signOut()
         val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+    }
+    private fun agregarPreguntas()
+    {
+        val intent = Intent(this, AdicionarPreguntas::class.java)
         startActivity(intent)
     }
 }

@@ -22,6 +22,7 @@
     <string name="txtField">This field can not be blank</string>
     <string name="txtFieldTerms">You must accept terms and conditions</string>
     <string name="registered">Successfully registered user</string>
+    <string name="questionRegistered">Successfully registered question</string>
     <string name="btnClose">Sign off</string>
 
     <string name="loren_ipsum">Loren ipsum dolor...</string>
@@ -39,4 +40,9 @@
 
     <string name="AuthenticationSuccesfull">Authentication succesfull.</string>
     <string name="AuthenticationFailed">Authentication failed.</string>
+
+    <string name="btnAdicionar">Add questions</string>
+    <string name="txtExam">Exam</string>
+    <string name="txtSave">Save</string>
+    <string name="txtBack">Back</string>
 </resources>

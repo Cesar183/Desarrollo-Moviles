@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         <activity
+            android:name=".AdicionarPreguntas"
+            android:exported="false" />
+        <activity
             android:name=".ListaPersonasActivity"
             android:exported="false" />
         <activity
@@ -25,12 +28,11 @@
             android:name=".SignUpActivity"
             android:exported="false" />
         <activity
-        android:name=".BienvenidaActivity"
-        android:exported="false" />
+            android:name=".BienvenidaActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"/>
-
+            android:exported="false" />
     </application>
 
 </manifest>

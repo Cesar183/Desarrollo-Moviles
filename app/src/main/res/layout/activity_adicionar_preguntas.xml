@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="25dp"
+    tools:context=".AdicionarPreguntas">
+
+    <EditText
+        android:id="@+id/etPregunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pregunta"
+        />
+    <EditText
+        android:id="@+id/etRespuestaUno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Respuesta 1"
+        />
+    <EditText
+        android:id="@+id/etRespuestaDos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Respuesta 2"
+        />
+    <EditText
+        android:id="@+id/etRespuestaTres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Respuesta 3"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtSave"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtBack"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+</LinearLayout>
