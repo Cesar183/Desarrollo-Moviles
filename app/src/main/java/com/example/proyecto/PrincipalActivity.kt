@@ -38,7 +38,7 @@ class PrincipalActivity : AppCompatActivity()
         }
         R.id.action_logout ->
         {
-            Toast.makeText(this, "Salir", Toast.LENGTH_SHORT).show()
+            finish()
             true
         }
         else ->

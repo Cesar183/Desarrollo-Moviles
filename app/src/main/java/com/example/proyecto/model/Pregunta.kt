@@ -1,9 +1,9 @@
 package com.example.proyecto.model
 
 data class Pregunta(
-    val id: String,
-    val Pregunta: String,
-    val Respuesta1: String,
-    val Respuesta2: String,
-    val Respuesta3: String,
+    var id: String,
+    var Pregunta: String,
+    var Respuesta1: String,
+    var Respuesta2: String,
+    var Respuesta3: String,
 )

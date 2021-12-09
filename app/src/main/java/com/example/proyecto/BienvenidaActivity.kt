@@ -28,6 +28,9 @@ class BienvenidaActivity : AppCompatActivity()
         binding.btnAdicionarPregunta.setOnClickListener{
             agregarPreguntas()
         }
+        binding.btnExam.setOnClickListener{
+            iniciarExamen()
+        }
     }
     private fun cerrarSesion()
     {
@@ -38,6 +41,11 @@ class BienvenidaActivity : AppCompatActivity()
     private fun agregarPreguntas()
     {
         val intent = Intent(this, AdicionarPreguntas::class.java)
+        startActivity(intent)
+    }
+    private fun iniciarExamen()
+    {
+        val intent = Intent(this, ExamenActivity::class.java)
         startActivity(intent)
     }
 }
